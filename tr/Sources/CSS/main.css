@@ -258,6 +258,18 @@ li::before {
 }
 
 /* ── Tables ──────────────────────────────────────────────── */
+table
+{
+    border: 2px solid rgba(25, 25, 25, 0.25);
+    width: 100%;
+    margin-top: 20px;
+}
+thead
+{
+    background-color: rgba(25, 25, 25, 0.25);
+    color: white; 
+    text-align: center;
+}
 #tableh2 {
     font-family: 'Inter', system-ui, sans-serif;
     font-size: 0.9rem;

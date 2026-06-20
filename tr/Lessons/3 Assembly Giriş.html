@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../Sources/CSS/main.css">
 </head>
 <body>
-    <h1>Example Main Title</h1>
+    <h1>Giriş</h1>
 
     <div style="height: 100px;"></div>
     
@@ -41,10 +41,70 @@
 
         <pre id="preh2">Açıkcası evet Assembly bu sayfasının yazılma tarihine göre 79 yaşında... Şimdi diyebilirisiniz "Bu dil bu kadar yaşlı ise neden daha genö diller kullanmıyoruz?"i cevabı çok basit. Tabiki de performans ve düşük seviye kontrolu! Şimdi düşünün, yüksek seviyeli dillerde normal şartlar Gargabe Collecter isminde bir sistem mevcuttur. Bu sistem eskiden yapılan manuel bellek yönetimi otomatikleştirmeye amaçlar. Teoride bu sistem mantıklı olsada pratikde bizler için büyük sorundur. Çünkü sırf bu sistem için yazılım dili kendi programızı durdurur ve Garbage Collecter işini yapar. Bu durum programamız için donmalara ve takılmamalara yol açar. İşte bu gibi durumlarda Assembly gibi düşük seviyeli diller kullanılır. Çünkü bu dillerde bellek yönetimi manuel yapılır. Peki Assembly yerine C veya C++ kullansak? Oda bir seçenek fakat C ve dolasıyla C++'ın temeli Assembly ve Assembly çalıştığında arada hiç bir kartman bulunmadığı saf işlemci gücünü kullanmış oluruz ki bu yüzden hız ve performans gerektiren tüm sistemlerde Assembly kullanılır.</pre>
 
+        <h3>Assembler</h3>
+        <pre id="preh3">Assembler, Assembly dilini makine koduna dönüştüren derleyici programlardır. Tarih boyunca bir çok Assembler yapılmış olsada biz bu eğitimde NASM kullanıcağız.</pre>
+
+        <pre id="preh3">Assembler'lar iki türdür:</pre>
+        <ul>
+            <li>Tekli Assembler; Kullanılan makine için derleme yapabilen Assembler'dır.</li>
+            <li>Çoklu Assembler; Kullanılan makine ve diğerleri içinde derleme yapabilen Assembler'dır.</li>
+        </ul>
+
+        <pre id="preh3">NASM, çoklu Assembler'dır.</pre>
+
+        <h3>Makine Kodu ile Assembly</h3>
+        <pre id="preh3">Bu iki dil arasında aslında neredeyse fark yoktur. Makine kodu bildiğimiz bir ve sıfırlardan oluşan ve makinelerin anladığı bir dildir. Assembly ise makine kodunu okunabilir kılan bir aslında çeviricidir. Yaptığı ise var olan makine kodunu insan diline dönüştürür ve ardından düzenler. Bu işleme Disassemler yani makine kodundan Assembly'e çevirmedir. Tam tersine yani Assembly'den makine koduna ise Assembler olarak adlandırılır.</pre>
+
+        <h3>Yüksek Seviye Diller ile Düşük Seviyeli Diller</h3>
+        <pre id="preh3">Bu iki kavram dilleri ne kadar rahatlıkla anlayabilmemizin derecesidir. Düşük seviye demek kapasitesi düşük değil, İngilizce'ye yakınlık seviyesidir.</pre>
+
+        <pre id="preh3">Örnek olarak düşük seviyeli dillere; C, C++, Assembly ve Rust denilebilir iken yüksek seviylerede Java, Python ve C# verilebilir.</pre>
+
+        <pre id="preh3">Farklarını bir tablo halinde inceleyelim.</pre>
+        <table border="1">
+            <thead> 
+            <tr>
+              <th>High-level language</th>
+              <th>Assembly</th>
+            </tr>
+          <tbody>
+            <tr>
+              <td>Okunabirlik ve kolaydırlar</td>
+              <td>Okunması ve anlaşılması zordur</td>
+            </tr>
+            <tr>
+              <td>Yazılma biçimi basittir</td>
+              <td>Yazılma biçimi bütün dillerden çok farklıdır</td>
+            </tr>
+            <tr>
+              <td>Yavaş ve hantaldır</td>
+              <td>Hızlı ve performanslıdır</td>
+            </tr>
+            <tr>
+              <td>Bellek yönetimi otomatikdir</td>
+              <td>Bellek yönetimi manualdir</td>
+            </tr>
+        </table>
+
+        <h3>Kullanım Alanları</h3>
+        <pre id="preh3">Firmware; Donanımlara yazılım yazarken Assembly kullanılır. Çünkü bu tarz sistemlerde diğer diller çalışmak için bağımlılık isterken, Assembly sadece kendisine ihityaç duyar ve her yerde çalışır.</pre>
+
+        <pre id="preh3">İşletim sistemi çekirdeğinde(Kernelinde); Çekirdek, işletim sistemi ile donanım arasındaki köprüdür. İşletim sistemi yapmak istenilen işlemi çekirdeğe iletir, çekirdekde gerekli donanımları kullanarak bilgiyi tekrar işletim sistemine gönderir. Donanıma bu kadar yakın olan bu sistem Assembly ile yazılır çünkü milisaniyelerin bile değerleri vardır ve donanımlar diğer dilleri anlayamazlar.</pre>
+
+        <pre id="preh3">Oyun optimizasyonu; Oyunlar özellikle FPS oyunlarında hız çok önemlidir. Assembly'de hiç bir ara katman kullanmadan direkt donanım ile haberleştiği için bir çok FPS oyun Assembly veya önemli kısımları ile yazılır.</pre>
+
+        <pre id="preh3">Tersine mühendislik; Derlenen dillerin çoğu çıktı olarak çalıştırabilir ikili kod çıkartırlar. İkili kodlar Disassemler tarafından Assembly'e çevirebildiği için önceden derlenmiş uygulamaların kaynak kodları Assembly şeklinde okunabilir.</pre>
+
+        <pre id="preh3">Sürücü; Aynı Firmware'de olduğu gibi donanımlar sadece Assebly anlayabilir. Sürücüler ise donanım ile yazılım arasında iletişimi sağladıkları için Assembly ile yazılır.</pre>
+
+        <h2>İşlemci ve Bellek</h2>
+        <pre id="preh3">Bu iki kavram Assembly ve düşük seviye yazılım dilleriyle kodlama yaparken sıkça karşıma çıkacağı için tanıyalım.</pre>
+
         <h2>Kaynakça</h2>
         <ul>
             <li><a href="https://tr.wikipedia.org/wiki/Assembly">https://tr.wikipedia.org/wiki/Assembly</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Assembly_language">https://en.wikipedia.org/wiki/Assembly_language</a></li>
+            <li><a href="https://www.geeksforgeeks.org/compiler-design/introduction-of-assembler/">https://www.geeksforgeeks.org/compiler-design/introduction-of-assembler/</a></li>
         </ul>
     <div style="height: 100px;"></div>
 
