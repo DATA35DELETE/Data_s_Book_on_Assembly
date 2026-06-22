@@ -25,7 +25,7 @@
   - **x86 (32-bit)**: Tanım. IA-32 Mimarisi. Kullanım.
   - **x86-64 (64-bit)**: Tanım. AMD64. En Yaygın Masa Üstü Mimarisi.
   - **ARM**: Tanım. Mobil ve Gömülü Sistemler. Farkı.
-  - **Bu Dokümantasyonda**: x86-64 (Linux). NASM Assembler.
+  - **Bu Dokümantasyonda**: x86-64 (Linux ve Windows). NASM Assembler.
 - **Araçları Kurma**:
   - **NASM Kurulumu**: NASM Nedir? Kurulum Adımları. Örnek.
   - **GDB Kurulumu**: Hata Ayıklama Aracı. Kurulum.
