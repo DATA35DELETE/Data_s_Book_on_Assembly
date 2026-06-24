@@ -28,13 +28,100 @@
         <h2>Sayı Sistemler</h2>
         <pre id="preh2">Sayı sistemleri, sayıları belirtmek için kullanılan belirli bir formula bağlı olan makineler tarafından anlışması için geliştirilmiş sistemlerdir.</pre>
 
-        <pre id="preh2">Biz insanlar olarak günlük hayatta onluk sayı sistemini kullanılırız. Fakat makine</pre>
+        <pre id="preh2">Biz insanlar olarak günlük hayatta onluk sayı sistemini kullanılırız. Fakat makineler bizim gibi onluk sistemini anlıyamazlar. Hatta makineler neredeyse hiç bir harfi veya sayıyı anlıyamazlar. Tek anladıkları kavram ikili kodlama sistemi yani sıfırlar ve birler! Evet makineler ekranda onu veya yüz milyon sayılarını gösterebilirler hatta işlem yapabilirler ama gerçekte o sayıların sadece ikili kod sistemindeki versiyonunu görebilirler. Bunun sebebi pek tabi mimarilerinde yatan kısıtlama, makineler biz insanlar gibi sıfırdan dokuza kadar rakamları yoktur. Çünkü makineler bizim gibi "adet" veya "miktar" kavramlarından yoksunlardır. Bu sebeble açık anlamına gelen bir ve kapalı anlamına gelen sıfır sistemini kullanılırlar.</pre>
+
+        <pre id="preh3">Peki neden sayı sistemleri bu kadar önemli? Çünkü makineleri anlamak, sayı sistemlerini ve özellikle ikili kodlama sistemini anlamaktan geçer. Nasıl olsada makineler bizden daha zeki değiller sadece biz görev verdiğimizde en zeki sistemlerdir.</pre>
+
+        <h3>Binary(İkili) Sayı Sistemi</h3>
+        <pre id="preh3">Binary sadece bir ve sıfırdan oluşan bir sayı sistemidir.</pre>
+
+        <pre id="preh3">Mantığı aslında çok basit. Tüm sayı sistemlerinde olduğu gibi her bir basamak onluk sayı sistemindeki sayıya karşılık gelecek şekilde sıralamak. Daha iyi olması için bir görsel gösterelim;</pre>
+
+        <div id="divh3">
+            <img src="../Bibliography/4 Assembly Temel Kavramlar.html/1.svg" alt="4.1" width="80%">
+        </div>
+
+        <pre id="preh3">İşte tüm sayı sistemleri bu mantıkla çalışır...</pre>
+
+        <pre id="preh3">Binary'de her bir sayıya denk gelen isim "bit" denmektedir. Eğer sekiz biti bir araya getirirseniz elinizde bir baytlık veri bulunur. Böylelikle sistemler kendilerine özel bir depolama kavramı olan "bayt" sistemi ortaya çıkmış oldu. O gördüğünüz "43 GB" veya "2321 MB" gibi birimler aslında baytın kat sayılarıdır. Aşağıda tablo şekilde baytın katlarını gösterilmiştir.</pre>
+
+        <table id="tableh2" border="1">
+            <thead>
+                <tr>
+                    <th>İsmi</th>
+                    <th>Aralığı</th>
+                    <th>Nerelerde Kullanılır?</th>
+                    <th>Örnek Gösterimi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bayt</td>
+                    <td>1,024 - 0</td>
+                    <td>Bir yazıyı depolamak için</td>
+                    <td>512 B</td>
+                </tr>
+                <tr>
+                    <td>Kilobayt</td>
+                    <td>1,024,000 - 0</td>
+                    <td>Bir kitap kadar veriyi depolamak için</td>
+                    <td>355 KB</td>
+                </tr>
+                <tr>
+                    <td>Megabayt</td>
+                    <td>1,024,000,000 - 0</td>
+                    <td>Küçük çaplı bir oyun dosyalarını depolamak için</td>
+                    <td>235 MB</td>
+                </tr>
+                <tr>
+                    <td>Gigabayt</td>
+                    <td>1,024,000,000,000 - 0</td>
+                    <td>Büyük çaplı bir oyun dosyalarını depolamak için</td>
+                    <td>748 GB</td>
+                </tr>
+                <tr>
+                    <td>Terabayt</td>
+                    <td>1,024,000,000,000 - 0</td>
+                    <td>Büyük bir şirketin müşteri bilgilerini depolamak için</td>
+                    <td>234 TB</td>
+                </tr>
+                <tr>
+                    <td>Petabayt</td>
+                    <td>1,024,000,000,000 - 0</td>
+                    <td>Tüm Dünya'daki insanların verilerini depolamak için</td>
+                    <td>761 PB</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Hexadecimal(Onaltılıl Sayı Sistemi)</h3>
+        <pre id="preh3">Onaltılık sayı sistemi, rakamları sıfır, bir, iki, üç, dört, beş, altı, yedi, sekiz, dokuz, a, b,c,d,e ve f'dir. Evet sayıları belirtirken harfde kullanılabilir. Harflerin kullanımı bu kısımda aslında dokuzdan sonra herhangi bir rakamın olmamasıdır. Bu sebeble altı tane daha rakam eklemek için harfler eklenmiştir. Sırasıyla; on bir, on iki, on üç, on dört, on beş ve on altı sayılarını temsil ederler ve onaltılık sayı sisteminde rakam rölündelerdir.</pre>
+
+        <pre id="preh3">Onaltılık sayı sisteminde sayıları belirtirken tıpkı ikili ve onlu sayı sisteminde gösterdiğimiz gibi hesaplanır. Şimdi elli yedi sayısını onaltılık sayı sisteminde belirtelim;</pre>
+
+        <div id="divh3Img">
+            <img src="../Bibliography/4 Assembly Temel Kavramlar.html/2.svg" alt="4.2" width="80%">
+        </div>
+
+        <pre id="preh3">Onaltılık sayı sistemi genelde onluk sistemindeki büyük sayıları kısa bir şekilde ifade etmemizi sağlar. Yani veri tasarufu sağlar.</pre>
 
 
+        <h3>Octol(Sekizlik) Sayı Sistemi</h3>
+        <pre id="preh3">Sekizlik sayı sistemi rakamları ise; sıfır, bir, iki, üç, dört, beş, altı ve yedidir.</pre>
+
+        <pre id="preh3">Aynı örneğimizi sekizlik sayı sistemi içinde verelim;</pre>
+
+        <div id="divh3Img">
+            <img src="../Bibliography/4 Assembly Temel Kavramlar.html/3.svg" alt="4.3" width="80%">
+        </div>
+
+        <h2>Bit İşlemleri</h2>
+        <pre id="preh3">Bit verinin en küçük yapı taşı olduğu için onunla işlem yapmak makinelerin en düşük seviyedeki donanımla işlem yapmak demektir.</pre>
 
         <h2>Kaynakça</h2>
         <ul>
             <li><a href="https://startupvadisi.com/sayi-sistemleri/">https://startupvadisi.com/sayi-sistemleri/</a></li>
+            <li><a href="https://www.rapidtables.com/convert/number/hex-to-decimal.html">https://www.rapidtables.com/convert/number/hex-to-decimal.html</a></li>
         </ul>
     </div>
 
