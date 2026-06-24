@@ -84,7 +84,53 @@ So in coding wise: if you do anything in high-level language its proably being p
     <h3>What is a CPU?</h3>
     CPU stands for "Central Processing Unit" know as Central processor or just processor. Its electronic circuitry executes instructions of a computer program. Every operation, algorithm, arithmetics, you inputs and the programs outputs, etc. is being handled in this unit of the computer. This unit is blends in overtime with external components like main memory, and I/O circuitry, and specialized coprocessors for example Graphics Processor Unit (GPU).
 
+<<<<<<< HEAD
     almost like anything else the CPU was never always the same, it changed over time, but their fundamental operation remains almost unchanged. 
+=======
+    almost like anything else the CPU was never always the same, it changed over time, but their fundamental operation remains almost unchanged.
+
+    CPU's include a principal components like ALU (artihmetic-logic unit) that performs arithmetic and logic operations, <strong>Processor Registers</strong>,  which supply operands (the operators object) to the ALU store the results of ALU operations.
+
+    And theres a <strong>Control Unit</strong> which orchestrates the fetch's sent to memory, decoding and execution of the machine instructions.
+
+    <strong>Modern CPUs</strong> has a LOT of semiconductor area to do everything today. Including:
+    <li>caches</li>
+    <li>instruction-level parallelism</li>
+    they used these to increase the performance and also support the idea of operating systems and virtualization which is a tool used for literally every calculation and to guess the outputs of experiments types of various ideas
+    
+    <h3>What is RAM (Random Access Memory)?</h3> 
+
+    RAM stands for Random Access Memory meaning you can access the memory like, reading, removing (freeing) the stored memories in it, update, write into it and expand the space of the memory stored in it.
+    You are probably familiar with this structure if you ever got into a low-level programming language before.
+    
+    but RAM alone itself can't do every function we mentioned itself. Thats where the CPU comes in.
+
+    CPU uses a structure called <strong>System Bus Structure</strong>. Basically theres a <strong>Memory Controller</strong> which operates the entire memory between CPU and RAM are synchronized. it was located in the motherboard on older computers but of course, nowadays they just integrate it in the CPU itself for better speed and efficiency.
+    
+    The CPU takes the memories data, memories memory adresses and control checks via System Bus.
+    
+    The memory address is a address in RAM which equals to a value in it and via data bus in System Bus Structure.
+
+    When the CPU needs to access a memory, it places the address of the memory on the address bus and sends a signal via control bus to say that if its reading or writing the address.
+    If it reads, the memory controller retrieves the data by looking at the specfied address. then sends the data with the data bus back to the CPU to process it.
+    If it writes, the CPU just sends the data via data bus to store the data at the designated memory location.
+
+    This process is repeated billions of times in the CPU 
+    So continouing on:
+
+    <h3>What is System Bus Structure?</h3>
+
+    this is like a tunnel between CPU and RAM which keeps sending instructions over and over to syncronize the required data.
+    theres 3 types of buses:
+
+    <li>Data Bus: This bus takes the data and transports it</li>
+    <li>Address Bus: This bus takes the memory adress and transports it from one unit to another.</li>
+    <li>Control Bus:This bus takes the control data that checks if the data and adress buses reached to estimated location correctly. You can think of this like returning a function with true meaning the function successfully worked</li>
+
+    <h3>what is the 'Clock Cycles' in the terms of CPU?</h3>
+    
+    
+>>>>>>> cccb655f70423f86181182220ee2a81578467d6c
 </pre>
 
 <pre id="preh2">
@@ -92,6 +138,12 @@ So in coding wise: if you do anything in high-level language its proably being p
 <a href="https://en.wikipedia.org/wiki/Assembly_language#" target="_blank">https://en.wikipedia.org/wiki/Assembly_language</a>
 <a href="https://en.wikipedia.org/wiki/High-level_programming_language" target="_blank">https://en.wikipedia.org/wiki/High-level_programming_language<a>
 <a href="https://en.wikipedia.org/wiki/Central_processing_unit" target="_blank"> https://en.wikipedia.org/wiki/Central_processing_unit<a>
+<<<<<<< HEAD
+=======
+<a href="https://www.geeksforgeeks.org/computer-science-fundamentals/computer-memory/" target="_blank">https://www.geeksforgeeks.org/computer-science-fundamentals/computer-memory/<a>
+<a href="https://www.linkedin.com/advice/3/how-can-you-calculate-number-clock-cycles-assembly-bdjmf" target="_blank"> https://www.linkedin.com/advice/3/how-can-you-calculate-number-clock-cycles-assembly-bdjmf<a>
+<a href="" target="_blank"> <a>
+>>>>>>> cccb655f70423f86181182220ee2a81578467d6c
 <a href="" target="_blank"> <a>
 <a href="" target="_blank"> <a>
 <a href="" target="_blank"> <a>
