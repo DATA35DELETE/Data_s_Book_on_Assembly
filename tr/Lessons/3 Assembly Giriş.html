@@ -9,7 +9,7 @@
 
     <script src="../Sources/JS/setBackgroundMedia.js"></script>
 
-    <link rel="stylesheet" href="../Sources/JS/hljs/vs2015.css">
+    <link rel="stylesheet" href="../Sources/JS/hljs/atom-one-dark-reasonable.css">
     <script src="../Sources/JS/hljs/highlight.min.js"></script>
     <script>
         window.onload = function() {
@@ -61,7 +61,7 @@
         <pre id="preh3">Örnek olarak düşük seviyeli dillere; C, C++, Assembly ve Rust denilebilir iken yüksek seviylerede Java, Python ve C# verilebilir.</pre>
 
         <pre id="preh3">Farklarını bir tablo halinde inceleyelim.</pre>
-        <table border="1">
+        <table id="tableh3">
             <thead> 
             <tr>
               <th>High-level language</th>
@@ -217,11 +217,11 @@
             <img src="../Bibliography/3 Assembly Giriş.html/12.png" alt="3.12" width="80%">
         </div>
 
-        <pre id="codeh3">İşlemlerde sonra kontrol amaçlı Cmd'ye şu komutu yazalım.
+        <pre id="preh3">İşlemlerde sonra kontrol amaçlı Cmd'ye şu komutu yazalım.</pre>
 
-<code class="language-cmd">nasm --version</code>
+<pre id="codeh3"><span>main.cmd</span><code class="language-cmd">nasm --version</code></pre>
 
-Çıktısı bu şekil ise kurulum tamamlanmış demektir. Fakat farklı bir çıktı gelir ise adımları tekrarlamanız gerekebilir.</pre>
+<pre id="preh3"></pre>Çıktısı bu şekil ise kurulum tamamlanmış demektir. Fakat farklı bir çıktı gelir ise adımları tekrarlamanız gerekebilir.</pre>
 
         <div id="divh3Img">
             <img src="../Bibliography/3 Assembly Giriş.html/13.png" alt="3.13" width="80%">
@@ -240,9 +240,9 @@
         <h2>İlk Program</h2>
         <pre id="preh2">Teorik bilgiler ve araçlar hazır ise ilk program olarak ekrana "Hello World" yazdıran bir program yazalım.</pre>
 
-        <pre id="codeh2">main.asm adlı bir dosya oluşturalım ve içerisine şu Assembly kodlarını yazalım;
+        <pre id="preh2">main.asm adlı bir dosya oluşturalım ve içerisine şu Assembly kodlarını yazalım;</pre>
 
-<code>section .data
+<pre id="codeh2"><span>main.asm</span><code>section .data
     msg db 'Hello World!', 0
     len equ $ - msg
 
@@ -265,19 +265,19 @@ main:
     call WriteConsoleA
     
     mov rcx, 0
-    call ExitProcess</code>
+    call ExitProcess</code></pre>
 
-Ardında derleyip bağlayıp çalıştıralım;
+<pre id="preh2">Ardında derleyip bağlayıp çalıştıralım;
 
-Windows:
-<code class="language-cmd">nasm -f win64 main.asm -o main.o
+Windows:</pre>
+<pre id="codeh2"><span>main.cmd</span><code class="language-cmd">nasm -f win64 main.asm -o main.o
 
 ld main.o -o main.exe -lkernel32
 
 main
-</code>
+</code></pre>
 
-Çıktı;</pre>
+<pre id="preh2">Çıktı;</pre>
 
         <div id="divh2Img">
             <img src="../Bibliography/3 Assembly Giriş.html/14.png" alt="3.14" width="80%">
